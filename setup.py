@@ -63,7 +63,7 @@ setup(
     author='Mike MacNeil',
     author_email='mikemacneil19@gmail.com',
     description='Library for a Convex NMF problem',
-    license='BSD',
+    license='Apache 2.0',
     ext_modules=[CMakeExtension('convexnmf')],
     packages=['convexnmf'],
     package_dir = { 'convexnmf' : 'bindings/convexnmf' },
