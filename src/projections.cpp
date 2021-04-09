@@ -11,7 +11,7 @@ namespace convexnmf {
 namespace {
 
 template <typename T> bool IsClose(T a, T b) {
-    return std::abs(a - b) < std::numeric_limits<T>::epsilon() * std::max(1.0,std::abs(a+b));
+    return std::abs(a - b) < std::numeric_limits<T>::epsilon() * (1.0+std::abs(a+b));
 };
 
 } // namespace
